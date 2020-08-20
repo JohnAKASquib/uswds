@@ -113,3 +113,16 @@ function navigations(config) {
   //console.log(htmlString);
   return htmlString.join("\n");
 }
+
+
+
+exports.Components = function(config) {
+  return (
+    <button class="usa-nav__close">
+    <img src="{{ uswds.path }}/img/close.svg" role="img" alt="close">   
+    </button>
+    <ul class="usa-nav__primary usa-accordion">
+    {navigations(config)}
+  );
+};
+
