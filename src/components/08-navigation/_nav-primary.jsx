@@ -26,19 +26,15 @@ function navigations(config) {
     console.log("whats in link: " + config.nav.links[link]);
     htmlString.push("<li>\n");
     if (link) {
-      //console.log("3");
-      htmlString.push(`<button class="usa-accordion__button usa-nav__link`);
-      //if (link.is_current) {
+=      htmlString.push(`<button class="usa-accordion__button usa-nav__link`);
       //console.log("output this: "+config.nav.links[link] + " Next: "+link )
       if (config.nav.links[link] == true && link == "is_current") {
         htmlString.push(`usa-current`);
-        //console.log("when do i get here")
       }
       htmlString.push(
         `" aria-expanded="false" aria-controls="${config.nav.id_prefix} ${link.id}"><span>${link.text}</span></button>`
       );
     }
-    //console.log("blah: " + link);
 
     if (config.nav.mega) {
       htmlString.push(
@@ -56,13 +52,10 @@ function navigations(config) {
       config.nav.if_prefix == "basic-" ||
       config.nav.id_prefix == "extended-"
     ) {
-      //console.log("why are u: " + link);
-      //console.log("start of if loop");
       //for (let child = 0; child < link.length; child++) {
       for (const child in link) {
         //console.log("i am a child: " + child);
         if (count < 4) {
-          //console.log("hiiiiii");
           count++;
           htmlString.push(
             `<li class="usa-nav__submenu-item">
@@ -84,7 +77,6 @@ function navigations(config) {
         <ul class="usa-nav__submenu-list">`
         );
         for (const child in group) {
-          //console.log("4");
           htmlString.push(
             `<li class="usa-nav__submenu-item">
             <a href="${child.href}" class="`
@@ -115,7 +107,7 @@ function navigations(config) {
 }
 
 
-
+/*
 exports.Components = function(config) {
   return (
     <button class="usa-nav__close">
@@ -125,4 +117,199 @@ exports.Components = function(config) {
     {navigations(config)}
   );
 };
+*/
+
+//######################################################################
+//output generated in sandbox
+<ul>
+  <li>
+    {" "}
+    <button
+      class="usa-accordion__button usa-nav__link "
+      aria-expanded="false"
+      aria-controls="undefined undefined"
+    >
+      <span>undefined</span>
+    </button>{" "}
+    <ul id="undefined undefined" class="usa-nav__submenu usa-megamenu">
+      {" "}
+    </ul>{" "}
+    <li class="usa-nav__submenu-item">
+      {" "}
+      <a href="undefined" class=" ">
+        {" "}
+        abc
+      </a>{" "}
+    </li>{" "}
+    <li class="usa-nav__submenu-item">
+      {" "}
+      <a href="undefined" class=" ">
+        {" "}
+        abc
+      </a>{" "}
+    </li>{" "}
+    <li class="usa-nav__submenu-item">
+      {" "}
+      <a href="undefined" class=" ">
+        {" "}
+        abc
+      </a>{" "}
+    </li>{" "}
+    <li class="usa-nav__submenu-item">
+      {" "}
+      <a href="undefined" class=" ">
+        {" "}
+        abc
+      </a>{" "}
+    </li>{" "}
+  </li>{" "}
+  <li>
+    {" "}
+    <button
+      class="usa-accordion__button usa-nav__link usa-current "
+      aria-expanded="false"
+      aria-controls="undefined undefined"
+    >
+      <span>undefined</span>
+    </button>{" "}
+    <ul id="undefined undefined" class="usa-nav__submenu usa-megamenu">
+      {" "}
+    </ul>{" "}
+    <li class="usa-nav__submenu-item">
+      {" "}
+      <a href="undefined" class=" ">
+        {" "}
+        abc
+      </a>{" "}
+    </li>{" "}
+    <li class="usa-nav__submenu-item">
+      {" "}
+      <a href="undefined" class=" ">
+        {" "}
+        abc
+      </a>{" "}
+    </li>{" "}
+    <li class="usa-nav__submenu-item">
+      {" "}
+      <a href="undefined" class=" ">
+        {" "}
+        abc
+      </a>{" "}
+    </li>{" "}
+    <li class="usa-nav__submenu-item">
+      {" "}
+      <a href="undefined" class=" ">
+        {" "}
+        abc
+      </a>{" "}
+    </li>{" "}
+  </li>{" "}
+  <li>
+    {" "}
+    <button
+      class="usa-accordion__button usa-nav__link "
+      aria-expanded="false"
+      aria-controls="undefined undefined"
+    >
+      <span>undefined</span>
+    </button>{" "}
+    <ul id="undefined undefined" class="usa-nav__submenu usa-megamenu"></ul>{" "}
+    <li class="usa-nav__submenu-item">
+      {" "}
+      <a href="undefined" class=" ">
+        {" "}
+        abc
+      </a>{" "}
+    </li>{" "}
+    <li class="usa-nav__submenu-item">
+      {" "}
+      <a href="undefined" class=" ">
+        {" "}
+        abc
+      </a>{" "}
+    </li>{" "}
+  </li>{" "}
+  <li>
+    {" "}
+    <button
+      class="usa-accordion__button usa-nav__link "
+      aria-expanded="false"
+      aria-controls="undefined undefined"
+    >
+      <span>undefined</span>
+    </button>{" "}
+    <ul id="undefined undefined" class="usa-nav__submenu usa-megamenu">
+      {" "}
+    </ul>{" "}
+    <li class="usa-nav__submenu-item">
+      {" "}
+      <a href="undefined" class=" ">
+        {" "}
+        abc
+      </a>{" "}
+    </li>{" "}
+    <li class="usa-nav__submenu-item">
+      {" "}
+      <a href="undefined" class=" ">
+        {" "}
+        abc
+      </a>{" "}
+    </li>{" "}
+    <li class="usa-nav__submenu-item">
+      {" "}
+      <a href="undefined" class=" ">
+        {" "}
+        abc
+      </a>{" "}
+    </li>{" "}
+    <li class="usa-nav__submenu-item">
+      {" "}
+      <a href="undefined" class=" ">
+        {" "}
+        abc
+      </a>{" "}
+    </li>{" "}
+  </li>{" "}
+  <li>
+    {" "}
+    <button
+      class="usa-accordion__button usa-nav__link "
+      aria-expanded="false"
+      aria-controls="undefined undefined"
+    >
+      <span>undefined</span>
+    </button>{" "}
+    <ul id="undefined undefined" class="usa-nav__submenu usa-megamenu">
+      {" "}
+    </ul>{" "}
+    <li class="usa-nav__submenu-item">
+      {" "}
+      <a href="undefined" class=" ">
+        {" "}
+        abc
+      </a>{" "}
+    </li>{" "}
+    <li class="usa-nav__submenu-item">
+      {" "}
+      <a href="undefined" class=" ">
+        {" "}
+        abc
+      </a>{" "}
+    </li>{" "}
+    <li class="usa-nav__submenu-item">
+      {" "}
+      <a href="undefined" class=" ">
+        {" "}
+        abc
+      </a>{" "}
+    </li>{" "}
+    <li class="usa-nav__submenu-item">
+      <a href="undefined" class=" ">
+        {" "}
+        abc
+      </a>{" "}
+    </li>{" "}
+  </li>{" "}
+</ul>;
+
 
